@@ -122,8 +122,7 @@ const Login = ({t, lang}) => {
             {formik.errors.login && formik.touched.login ? <div className='alert alert-warning'>{formik.errors.login}</div> : ''}
             <MainInput onChange={formik.handleChange} onBlur={formik.handleBlur} value={formik.values.password} placeholder={t.auth.password}  type="password" id='password'  />
             {formik.errors.password && formik.touched.password ? <div className='alert alert-warning'>{formik.errors.password}</div> : ''}
-            {/* <Button text={t.auth.login} color="main"   /> */}
-            <button type='submit'id={'loginBtn'} className="btn bg-info  rounded-5 text-light w-100">{t.auth.login}</button>
+            <Button text={t.auth.login} color="main" type={'submit'} id={'loginBtn'} />
           </form>
 
           <div className="flex flex-col-reverse min-[1120px]:flex-col">

@@ -1,0 +1,17 @@
+<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="14" height="14" fill="#1E1E1E"/>
+<g id="Home Page" clip-path="url(#clip0_0_1)">
+<rect id="Rectangle 76" x="-1628" y="-1206" width="1920" height="7000" fill="#F9F9F9"/>
+<g id="bg" opacity="0.2">
+</g>
+<rect id="Rectangle 90" x="-1391" y="-1206" width="1444" height="6204" fill="white"/>
+<g id="categories">
+<path id="Vector" d="M13 6.99585H1M7 13L13 7L7 1" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_0_1">
+<rect width="1920" height="6204" fill="white" transform="translate(-1628 -1205)"/>
+</clipPath>
+</defs>
+</svg>

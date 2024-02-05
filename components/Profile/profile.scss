@@ -1,0 +1,364 @@
+.profileWrapper {
+    width: 90% !important;
+    margin: auto;
+    overflow: auto;
+
+    button {
+        color: white !important;
+        background-color: #20A5D5 !important;
+        transition: all 0.3s;
+
+        &:hover {
+            color: white !important;
+            background-color: #20A5D5 !important;
+        }
+    }
+
+    .profileAside {
+        margin: 50px 0px;
+        width: 30%;
+        height: 80vh;
+        background-color: #F3F5F7 !important;
+
+        .changeProfilePicture {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 5px;
+            color: black;
+            background-color: #D9D9D9;
+            cursor: pointer;
+        }
+
+        figure {
+            width: 40%;
+            border-radius: 50%;
+
+            img {
+                border-radius: 50%;
+            }
+        }
+    }
+
+    .profileNotActiveLinks {
+        color: rgba(0, 0, 0, 0.5) !important;
+    }
+
+    .profileActiveLinks {
+        color: rgb(0, 0, 0) !important;
+    }
+
+    .profileLinks {
+
+        i,
+        p {
+            cursor: pointer;
+        }
+    }
+
+    .accountDetailes {
+        width: 70%;
+
+        h2 {
+            font-size: 20px;
+            line-height: 32px;
+            font-weight: 600;
+        }
+
+        label {
+            font-size: 12px;
+            line-height: 12px;
+            font-weight: 700;
+            color: #6C7275;
+        }
+
+        input {
+            &::placeholder {
+                font-size: 16px;
+                line-height: 26px;
+                font-weight: 500;
+                color: rgba(0, 0, 0, 0.5);
+            }
+        }
+
+    }
+
+    .profileOrders {
+        width: 70%;
+
+        h2 {
+            font-size: 20px;
+            line-height: 32px;
+            font-weight: 600;
+        }
+
+        table {
+            font-size: 12px !important;
+            text-align: center;
+
+            button {
+                font-size: 10px !important;
+            }
+        }
+    }
+
+    .profileWishlist {
+        width: 70%;
+
+        h2 {
+            font-size: 20px;
+            line-height: 32px;
+            font-weight: 600;
+        }
+
+        .titleRow {
+            color: #6C7275 !important;
+            font-size: 12px !important;
+        }
+
+        .contentRow {
+            div {
+                display: flex;
+                justify-content: start;
+                align-items: center;
+            }
+
+            .col-6 {
+                color: black !important;
+                font-size: 14px !important;
+                font-weight: 700 !important;
+            }
+
+            .col-2 {
+                color: #141718 !important;
+                font-size: 14px !important;
+                line-height: 22px !important;
+                font-weight: 500 !important;
+            }
+
+            .position-absolute {
+                font-weight: bold;
+                width: fit-content !important;
+            }
+
+            .col-4 {
+                button {
+                    font-size: 11px !important;
+                    line-height: 28px !important;
+                    font-weight: 600 !important;
+                }
+            }
+
+        }
+    }
+    .profileAddresses{
+        width: 70%;
+        h2 {
+            font-size: 20px;
+            line-height: 32px;
+            font-weight: 600;
+        }
+        h3 {
+            font-size: 16px;
+            line-height: 26px;
+            font-weight: 600;
+        }
+        p{
+            font-size: 14px;
+            line-height: 22px;
+            font-weight: 400; 
+            cursor: pointer;
+        }
+    }
+}
+
+
+@media screen and (max-width:1100px) {
+    .profileWrapper {
+        width: 100% !important;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .profileWrapper {
+        p,td{
+          font-size: 8px !important;  
+        }
+        .profileAside {
+            .changeProfilePicture {
+                width: 30px;
+                height: 30px;
+                font-size: 14px; 
+            }
+            figure {
+                width: 60%;
+            }
+            .profileLinks {
+                font-size: 12px !important;
+                padding: 0px !important;
+                i{
+                    margin: 0px 8px 0px !important;
+                }
+            }
+        }
+        button{
+            font-size: 12px !important;
+        }
+        .accountDetailes {
+            label {
+                font-size: 8px;
+                line-height: 12px;
+                font-weight: 600;
+                color: #6C7275;
+            }
+            input {
+                &::placeholder {
+                    font-size: 8px;
+                    line-height: 16px;
+                    font-weight: 500;
+                }
+            }
+    
+        }
+        .profileOrders {
+
+            table {
+                font-size: 8px !important;
+                button {
+                    font-size: 6px !important;
+                }
+            }
+        }
+        .profileWishlist {
+            .contentRow {
+                .col-4 {
+                    button {
+                        font-size: 6px !important;
+                        line-height: 10px !important;
+                        font-weight: 400 !important;
+                    }
+                }
+    
+            }
+        }
+        
+    }
+}
+
+@media screen and (max-width:650px) {
+    .profileWrapper {
+        .profileAside {
+            h3{
+                font-size: 10px !important;
+            }
+            .changeProfilePicture {
+                width: 25px;
+                height: 25px;
+                font-size: 10px; 
+            }
+            figure {
+                width: 70%;
+            }
+            .profileLinks {
+                font-size: 8px !important;
+                padding: 0px !important;
+                i{
+                    margin: 0px 5px 0px !important;
+                }
+            }
+        }
+        button{
+            font-size: 4px !important;
+        }
+        .accountDetailes {
+            h2{
+                font-size: 16px;
+                line-height: 28px;
+                font-weight: 600;
+            }
+            label {
+                font-size: 8px;
+                line-height: 10px;
+                font-weight: 400;
+                color: #6C7275;
+            }
+            input {
+                &::placeholder {
+                    font-size: 6px;
+                    line-height: 8px;
+                    font-weight: 400;
+                }
+            }
+    
+        }
+        .profileOrders {
+            h2{
+                font-size: 16px;
+                line-height: 28px;
+                font-weight: 600;
+            }
+            table {
+                font-size: 4px !important;
+                button {
+                    font-size: 4px !important;
+                }
+            }
+        }
+        .profileWishlist {
+            h2{
+                font-size: 16px;
+                line-height: 28px;
+                font-weight: 600;
+            }
+            .titleRow {
+                font-size: 6px !important;
+            }
+            .contentRow {
+                
+                .col-6 {
+                    
+                    font-size: 4px !important;
+                    font-weight: 400 !important;
+                }
+    
+                .col-2 {
+                    font-size: 4px !important;
+                    line-height: 10px !important;
+                    font-weight: 300 !important;
+                }
+                .position-absolute {
+                    font-size: 6px !important;
+                    i{
+                        margin: 0px !important;
+                    }
+                }
+                .col-4 {
+                    button {
+                        padding: 5px !important;
+                        font-size: 3px !important;
+                        line-height: 6px !important;
+                        font-weight: 400 !important;
+                    }
+                }
+    
+            }
+        }
+        .profileAddresses{
+            h2{
+                font-size: 16px;
+                line-height: 28px;
+                font-weight: 600;
+            }
+            h3 {
+                font-size: 12px;
+                line-height: 22px;
+                font-weight: 600;
+            }
+        }
+        
+    }
+}
+

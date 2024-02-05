@@ -1,0 +1,47 @@
+.swiper {
+    padding: 0 10px;
+}
+
+.swiper-backface-hidden .swiper-slide {
+    padding-top: 10px;
+}
+
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 33px!important;
+}
+
+.swiper-wrapper {
+    padding: 0px 0 20px 0;
+    margin-bottom: 20px;
+}
+
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 22px;
+}
+
+.slide-btns {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    gap: 28px;
+}
+
+.slider-btn {
+    height: 18px;
+	width: 18px;
+    cursor: pointer;
+	// padding-left: 28px;
+	// padding-top: 8px;
+	// padding-bottom: 8px;
+}
+
+
+
+[dir = "rtl"] {
+    .slide-btns {
+        right: unset;
+        left: 0;
+    }
+
+}

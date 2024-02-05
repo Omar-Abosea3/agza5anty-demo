@@ -1,0 +1,55 @@
+.cartFiles{
+    width: 35% !important;
+    right: -35%;
+    z-index: 99999999 !important;
+    .cartOffersToggleIcon{
+        position: absolute;
+        top: 30%;
+        right: 100%;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        background-color: white;
+        color: rgb(6, 112, 198);
+        i{
+            cursor: pointer;
+        }
+    }
+    .cartOffersContent{
+        figure{
+            img{
+                width: 100% !important;
+                height: auto !important;
+            }
+        }
+        figcaption{
+            div{
+                p{
+                    font-size: 10px !important; 
+                    font-weight: 500 !important;
+                    color: #575757 !important;
+                }
+                .ratings{
+                    font-size: 12px !important;
+                }
+            }
+            h6{
+                font-size: 14px !important;
+                font-weight: 500 !important;
+            }
+        }
+        .cartOffersBox{
+            background-color: #EEEEEE !important;
+        }
+        h3{
+            font-size: 12px !important;
+            font-weight: 800 !important;
+            span{
+                font-size: 16px !important;
+            }
+        }
+    }
+}

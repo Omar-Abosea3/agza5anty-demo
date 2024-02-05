@@ -1,0 +1,34 @@
+.shipping-stepper li .icon {
+  color: #C9C9C9;
+}
+.shipping-stepper li.active .icon {
+  color: #90C44E;
+}
+.shipping-stepper li.active:before, .shipping-stepper li.active:after {
+  background-color: #90C44E !important;
+}
+.shipping-stepper li.active p {
+  color: #20A5D5;
+}
+.shipping-stepper ul li:not(:last-of-type) {
+  position: relative;
+  padding-bottom: 60px;
+}
+.shipping-stepper ul li:not(:last-of-type):after {
+  content: "";
+  position: absolute;
+  bottom: 35px;
+  left: 10px;
+  width: 1px;
+  height: 24px;
+  background-color: rgba(155, 155, 155, 0.5019607843);
+}
+.shipping-stepper ul li:not(:last-of-type)::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 10px;
+  width: 1px;
+  height: 24px;
+  background-color: rgba(155, 155, 155, 0.5019607843);
+}/*# sourceMappingURL=ShippingInfo.css.map */

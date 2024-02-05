@@ -1,0 +1,297 @@
+.profileWrapper {
+  width: 90% !important;
+  margin: auto;
+  overflow: auto;
+}
+.profileWrapper button {
+  color: white !important;
+  background-color: #20A5D5 !important;
+  transition: all 0.3s;
+}
+.profileWrapper button:hover {
+  color: white !important;
+  background-color: #20A5D5 !important;
+}
+.profileWrapper .profileAside {
+  margin: 50px 0px;
+  width: 30%;
+  height: 80vh;
+  background-color: #F3F5F7 !important;
+}
+.profileWrapper .profileAside .changeProfilePicture {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  color: black;
+  background-color: #D9D9D9;
+  cursor: pointer;
+}
+.profileWrapper .profileAside figure {
+  width: 40%;
+  border-radius: 50%;
+}
+.profileWrapper .profileAside figure img {
+  border-radius: 50%;
+}
+.profileWrapper .profileNotActiveLinks {
+  color: rgba(0, 0, 0, 0.5) !important;
+}
+.profileWrapper .profileActiveLinks {
+  color: rgb(0, 0, 0) !important;
+}
+.profileWrapper .profileLinks i,
+.profileWrapper .profileLinks p {
+  cursor: pointer;
+}
+.profileWrapper .accountDetailes {
+  width: 70%;
+}
+.profileWrapper .accountDetailes h2 {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 600;
+}
+.profileWrapper .accountDetailes label {
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 700;
+  color: #6C7275;
+}
+.profileWrapper .accountDetailes input::-moz-placeholder {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.5);
+}
+.profileWrapper .accountDetailes input::placeholder {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.5);
+}
+.profileWrapper .profileOrders {
+  width: 70%;
+}
+.profileWrapper .profileOrders h2 {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 600;
+}
+.profileWrapper .profileOrders table {
+  font-size: 12px !important;
+  text-align: center;
+}
+.profileWrapper .profileOrders table button {
+  font-size: 10px !important;
+}
+.profileWrapper .profileWishlist {
+  width: 70%;
+}
+.profileWrapper .profileWishlist h2 {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 600;
+}
+.profileWrapper .profileWishlist .titleRow {
+  color: #6C7275 !important;
+  font-size: 12px !important;
+}
+.profileWrapper .profileWishlist .contentRow div {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.profileWrapper .profileWishlist .contentRow .col-6 {
+  color: black !important;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+}
+.profileWrapper .profileWishlist .contentRow .col-2 {
+  color: #141718 !important;
+  font-size: 14px !important;
+  line-height: 22px !important;
+  font-weight: 500 !important;
+}
+.profileWrapper .profileWishlist .contentRow .position-absolute {
+  font-weight: bold;
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+}
+.profileWrapper .profileWishlist .contentRow .col-4 button {
+  font-size: 11px !important;
+  line-height: 28px !important;
+  font-weight: 600 !important;
+}
+.profileWrapper .profileAddresses {
+  width: 70%;
+}
+.profileWrapper .profileAddresses h2 {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 600;
+}
+.profileWrapper .profileAddresses h3 {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 600;
+}
+.profileWrapper .profileAddresses p {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1100px) {
+  .profileWrapper {
+    width: 100% !important;
+  }
+}
+@media screen and (max-width: 800px) {
+  .profileWrapper p, .profileWrapper td {
+    font-size: 8px !important;
+  }
+  .profileWrapper .profileAside .changeProfilePicture {
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+  }
+  .profileWrapper .profileAside figure {
+    width: 60%;
+  }
+  .profileWrapper .profileAside .profileLinks {
+    font-size: 12px !important;
+    padding: 0px !important;
+  }
+  .profileWrapper .profileAside .profileLinks i {
+    margin: 0px 8px 0px !important;
+  }
+  .profileWrapper button {
+    font-size: 12px !important;
+  }
+  .profileWrapper .accountDetailes label {
+    font-size: 8px;
+    line-height: 12px;
+    font-weight: 600;
+    color: #6C7275;
+  }
+  .profileWrapper .accountDetailes input::-moz-placeholder {
+    font-size: 8px;
+    line-height: 16px;
+    font-weight: 500;
+  }
+  .profileWrapper .accountDetailes input::placeholder {
+    font-size: 8px;
+    line-height: 16px;
+    font-weight: 500;
+  }
+  .profileWrapper .profileOrders table {
+    font-size: 8px !important;
+  }
+  .profileWrapper .profileOrders table button {
+    font-size: 6px !important;
+  }
+  .profileWrapper .profileWishlist .contentRow .col-4 button {
+    font-size: 6px !important;
+    line-height: 10px !important;
+    font-weight: 400 !important;
+  }
+}
+@media screen and (max-width: 650px) {
+  .profileWrapper .profileAside h3 {
+    font-size: 10px !important;
+  }
+  .profileWrapper .profileAside .changeProfilePicture {
+    width: 25px;
+    height: 25px;
+    font-size: 10px;
+  }
+  .profileWrapper .profileAside figure {
+    width: 70%;
+  }
+  .profileWrapper .profileAside .profileLinks {
+    font-size: 8px !important;
+    padding: 0px !important;
+  }
+  .profileWrapper .profileAside .profileLinks i {
+    margin: 0px 5px 0px !important;
+  }
+  .profileWrapper button {
+    font-size: 4px !important;
+  }
+  .profileWrapper .accountDetailes h2 {
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 600;
+  }
+  .profileWrapper .accountDetailes label {
+    font-size: 8px;
+    line-height: 10px;
+    font-weight: 400;
+    color: #6C7275;
+  }
+  .profileWrapper .accountDetailes input::-moz-placeholder {
+    font-size: 6px;
+    line-height: 8px;
+    font-weight: 400;
+  }
+  .profileWrapper .accountDetailes input::placeholder {
+    font-size: 6px;
+    line-height: 8px;
+    font-weight: 400;
+  }
+  .profileWrapper .profileOrders h2 {
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 600;
+  }
+  .profileWrapper .profileOrders table {
+    font-size: 4px !important;
+  }
+  .profileWrapper .profileOrders table button {
+    font-size: 4px !important;
+  }
+  .profileWrapper .profileWishlist h2 {
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 600;
+  }
+  .profileWrapper .profileWishlist .titleRow {
+    font-size: 6px !important;
+  }
+  .profileWrapper .profileWishlist .contentRow .col-6 {
+    font-size: 4px !important;
+    font-weight: 400 !important;
+  }
+  .profileWrapper .profileWishlist .contentRow .col-2 {
+    font-size: 4px !important;
+    line-height: 10px !important;
+    font-weight: 300 !important;
+  }
+  .profileWrapper .profileWishlist .contentRow .position-absolute {
+    font-size: 6px !important;
+  }
+  .profileWrapper .profileWishlist .contentRow .position-absolute i {
+    margin: 0px !important;
+  }
+  .profileWrapper .profileWishlist .contentRow .col-4 button {
+    padding: 5px !important;
+    font-size: 3px !important;
+    line-height: 6px !important;
+    font-weight: 400 !important;
+  }
+  .profileWrapper .profileAddresses h2 {
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 600;
+  }
+  .profileWrapper .profileAddresses h3 {
+    font-size: 12px;
+    line-height: 22px;
+    font-weight: 600;
+  }
+}/*# sourceMappingURL=profile.css.map */

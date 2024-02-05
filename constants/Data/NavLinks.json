@@ -1,0 +1,34 @@
+[
+  {
+    "nameAr": "الرئيسية",
+    "nameEn": "Home",
+    "href": "/"
+  },
+  {
+    "nameAr": "المتجر",
+    "nameEn": "Shop",
+    "href": "/"
+  },
+  {
+    "nameAr": "العروض",
+    "nameEn": "Offers",
+    "href": "/best-offers",
+    "subDomain": [
+      {
+        "nameAr": "عرض",
+        "nameEn": "Offer",
+        "href": "/"
+      }
+    ]
+  },
+  {
+    "nameAr": "الخصومات",
+    "nameEn": "on sale",
+    "href": "/"
+  },
+  {
+    "nameAr": "اتصل بنا",
+    "nameEn": "Contact Us",
+    "href": "/"
+  }
+]

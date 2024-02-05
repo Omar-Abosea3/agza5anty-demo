@@ -1,0 +1,47 @@
+.shipping-stepper {
+
+    li {
+        .icon {
+            color: #C9C9C9;
+        }
+    
+        &.active {
+            .icon {
+                color: #90C44E;
+            }
+    
+            &:before,
+            &:after {
+                background-color: #90C44E !important;
+            }
+    
+            p {
+                color: #20A5D5;
+            }
+        }
+    }
+    
+    ul li:not(:last-of-type) {
+        position: relative;
+        padding-bottom: 60px;
+    
+        &:after {
+            content: "";
+            position: absolute;
+            bottom: 35px;
+            left: 10px;
+            width: 1px;
+            height: 24px;
+            background-color: #9B9B9B80;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: 0px;
+            left: 10px;
+            width: 1px;
+            height: 24px;
+            background-color: #9B9B9B80;
+        }
+    }
+}

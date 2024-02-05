@@ -1,0 +1,31 @@
+.custom-shadow {
+    box-shadow: 0px 0px 4px 0px #0000001A;
+}
+
+.upload-form {
+    input {
+        @apply w-full border border-[#3C42571F] rounded-[30px] py-[15px] px-[20px] placeholder:text-[#C2C2C2] outline-none
+    }
+
+    textarea {
+        @apply w-full border border-[#3C42571F] rounded-[30px] py-[15px] px-[20px] placeholder:text-[#C2C2C2]
+        resize-none h-[124px] outline-none
+    }
+}
+
+.step-text {
+    @apply text-[#575757] font-[600] text-[20px]
+}
+
+.step-details {
+    @apply font-[500] text-[#575757]
+}
+
+.valid-list {
+
+    li {
+        list-style: disc;
+        font-weight: 500;
+        
+    }
+}

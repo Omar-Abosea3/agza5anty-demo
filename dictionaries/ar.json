@@ -1,0 +1,64 @@
+{
+  "auth": {
+    "helloAgain": "أهلا بك مرة أخرى",
+    "welcomeBack": "مرحبا بعودتك",
+    "email": "البريد الإلكتروني",
+    "password": "كلمة المرور",
+    "login": "تسجيل الدخول",
+    "forgotPassword": "نسيت كلمة المرور؟",
+    "dontHaveAccount": "ليس لديك حساب؟",
+    "signIn": "تسجيل الدخول",
+    "signUp": "سجل الان",
+    "logout":"تسجيل خروج",
+    "continueWithGmail": "تابع مع Gmail",
+    "emailAddress": "عنوان البريد الإلكتروني",
+    "firstName": "الاسم الاول",
+    "lastName": "الاسم الاخير",
+    "mobileNumber": "رقم الهاتف",
+    "governorate": "المحافظة",
+    "city": "المدينة",
+    "locationWriting": "الموقع بالكتابة",
+    "insurance": "شركة التأمين",
+    "cardNumber": "رقم البطاقة",
+    "createPassword": "إنشاء كلمة مرور",
+    "confirmPassword": "تأكيد كلمة المرور",
+    "register": "تسجيل",
+    "alreadyHaveAccount": "هل لديك حساب؟",
+    "insertYourEmail": "أدخل بريدك الإلكتروني",
+    "resetpassword": "إعادة تعيين كلمة المرور",
+    "backToLogin": "العودة إلى تسجيل الدخول",
+    "hello": "مرحبا!",
+    "toStarted": "للبدء",
+    "current_Password":"كلمة  المرور الحالية",
+    "SetNewPassword":"كلمة المرور الجديدة",
+    "confirmNewPassword":"تأكيد كلمة المرور الجديدة"
+  },
+  "nav": {
+    "search": "بحث"
+  },
+  
+  "home": {
+    "clickhere": "انقر هنا",
+    "Continue":"استمرار"
+  },
+  "profile":{
+    "account_detailes":"معلومات الحساب",
+    "profile":"الصفحة الشخصية",
+    "address":"العناوين",
+    "orders":"الطلبات السابقة",
+    "wishlist":"المفضلة",
+    "edit_profile":"تعديل الملف الشخصي",
+    "addresses":"العناوين",
+    "default_Address":"العنوان الاساسي",
+    "latest_Addresses":"احدث العناوين",
+    "shipping_Addresses":"العناوين الأخرى",
+    "orders_History":"سجل الطلبات",
+    "order_items":"العناصر",
+    "order_id":"الرقم التعريفي",
+    "order_date":"التاريخ",
+    "order_Price":"السعر",
+    "order_Status":"الحالة",
+    "re_Order":"إعادة طلب",
+    "user_Wishlist":"قائمة مفضلاتك"
+  }
+}

@@ -1,0 +1,91 @@
+.check-mark {
+  position: relative;
+}
+.check-mark.active:before, .check-mark.active:after {
+  background-color: #90C44E;
+}
+.check-mark:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -27px;
+  width: 20px;
+  height: 1px;
+  background-color: rgba(155, 155, 155, 0.5019607843);
+}
+.check-mark:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -27px;
+  width: 20px;
+  height: 1px;
+  background-color: rgba(155, 155, 155, 0.5019607843);
+}
+@media screen and (max-width: 480px) {
+  .check-mark:before, .check-mark:after {
+    width: 16px;
+  }
+  .check-mark:before {
+    left: -20px;
+  }
+  .check-mark:after {
+    right: -20px;
+  }
+}
+
+.payment-input {
+  background-color: #fff;
+  border: 1px solid rgba(60, 66, 87, 0.1215686275);
+  padding: 12px 19px;
+  border-radius: 30px;
+  color: #000;
+  outline: none;
+}
+
+.payment-input::-moz-placeholder {
+  color: #C2C2C2;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.payment-input::placeholder {
+  color: #C2C2C2;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.checkbox-sameAddress .MuiFormControlLabel-label {
+  color: #585858;
+  font-size: 14px;
+}
+
+.payment-method .MuiFormControlLabel-label {
+  font-size: 15px;
+  color: #6C6C6C;
+}
+@media screen and (max-width: 400px) {
+  .payment-method .MuiFormControlLabel-label {
+    font-size: 14px;
+  }
+}
+
+.payment-icon {
+  @apply absolute top-[50%] end-[20px] translate-y-[-50%];
+}
+
+.afterIcon {
+  position: relative;
+  color: #90C44E !important;
+}
+.afterIcon::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  right: 0%;
+  background-color: #90C44E;
+  width: 3px;
+  height: 70px;
+  margin: auto;
+}/*# sourceMappingURL=CartWrapper.css.map */

@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+
+  }
+}
+
+.shadow-card {
+  box-shadow: 0px 0px 10px 0px #00000026;
+}
+
+.bg-pattern {
+  background-image: url(../../assets//images/patterns/product-detail.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.page-container {
+  @apply bg-white shadow-sm px-[10px] sm:px-[20px] md:px-[30px] lg:px-[40px] py-[70px]
+}
+
+.component-wrapper {
+  @apply bg-[#F8F8F8] rounded-[10px] py-[22px]
+}
+body{
+  background-color: whitesmoke;
+}
+

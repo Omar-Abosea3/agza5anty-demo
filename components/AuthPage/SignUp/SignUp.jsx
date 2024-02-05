@@ -332,7 +332,7 @@ const SignUp = ({t, lang, pageType, submitHandler}) => {
 
             <div className="flex items-center justify-center">
               {/* <Button text={pageType === "checkout" ? "Continue" : t.auth.register} color="main" width="350px" onClickHandler={submitHandler} /> */}
-              <MainButton
+              {/* <MainButton
                 text={pageType === "checkout" ? "Continue" : t.auth.register}
                 color="primary"
                 width="350px"
@@ -341,7 +341,8 @@ const SignUp = ({t, lang, pageType, submitHandler}) => {
                 fontSize="18px"
                 href={pageType === "checkout" ? "/checkout/payment" : ""}
                 type={'submit'}
-              />
+              /> */}
+              <button type='submit'id={'signupButton'} className="btn bg-info rounded-5 text-light w-100">{t.auth.register}</button>
             </div>
           </form>
 

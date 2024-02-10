@@ -59,6 +59,19 @@
     "order_Price":"Price",
     "order_Status":"Status",
     "re_Order":"Reorder",
+    "trackOrder":"Track your order",
     "user_Wishlist":"Your Wishlist"
+  },
+  "orders":{
+    "myOrders":"MY ORDERS",
+    "allOrders":"All Orders",
+    "activeOrder":"Active Order"
+  },
+  "errors":{
+    "NoActiveOrderTitle":"You do not have an active order.",
+    "NoActiveOrderMessage":"You do not have an active order. Make a new order now from our great iteams.",
+    "NoAllOrderTitle":"You do not have order.",
+    "NoAllOrderMessage":"You do not have order. Make a new order now from our great iteams.",
+    "homePageButton":"Go to homepage"
   }
 }

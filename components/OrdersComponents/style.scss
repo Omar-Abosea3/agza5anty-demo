@@ -1,0 +1,74 @@
+#OrdersPage{
+    .ordersTitle{
+        h2{
+            font-size: 30px;
+            font-weight: 500;
+            position: relative;
+            &::after{
+                content: "";
+                position: absolute;
+                top: 100%;
+                left: inherit;
+                right: inherit;
+                height: 6px;
+                width: 3.5%;
+                border-radius:5px;
+                background-color: #20A5D5;
+            }
+        }
+    }
+    #ordersNavigation{
+        .orderNavLinks{
+            color: #B1B5C3;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        .currentOrderLink{
+            color: #000000 !important;
+            border-bottom: #000000 solid 3px !important;
+        }
+    }
+    #NoOrders{
+        figure{
+            img{
+                width: 100% !important;
+            }
+        }
+        h2{
+            font-size: 40px;
+            line-height: 110%;
+            font-weight: 700;
+            color: #000000;
+        }
+        p{
+            font-size: 18px;
+            line-height: 140%;
+            font-weight: 500;
+            color: #212121;
+        }
+    }
+}
+
+@media screen and (max-width:1100px) {
+    #OrdersPage{
+        .orders{
+            table {
+                font-size: 8px !important;
+                button {
+                    font-size: 6px !important;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:650px) {
+    #OrdersPage{ 
+        .orders{
+            padding-left: 0px !important;
+            padding-right: 0px !important;
+        }
+    }
+}
+

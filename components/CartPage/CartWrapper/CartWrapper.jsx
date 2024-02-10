@@ -122,6 +122,7 @@ const router = useRouter()
       if(result){
         changeStep(step);
         cartOffersOpen();
+        dispatch(getUserCartData());
         setTimeout(() => {
           router.push('/');
         }, 1500);

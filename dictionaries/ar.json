@@ -52,13 +52,26 @@
     "default_Address":"العنوان الاساسي",
     "latest_Addresses":"احدث العناوين",
     "shipping_Addresses":"العناوين الأخرى",
-    "orders_History":"سجل الطلبات",
+    "orders_History":"سجل طلباتي",
     "order_items":"العناصر",
     "order_id":"الرقم التعريفي",
     "order_date":"التاريخ",
     "order_Price":"السعر",
     "order_Status":"الحالة",
     "re_Order":"إعادة طلب",
+    "trackOrder":"متابعة الطلب",
     "user_Wishlist":"قائمة مفضلاتك"
+  },
+  "orders":{
+    "myOrders":"طلباتي",
+    "allOrders":"كل الطلبات",
+    "activeOrder":"الطلبات الجارية"
+  },
+  "errors":{
+    "NoActiveOrderTitle":"ليس لديك اي طلبات جارية .",
+    "NoActiveOrderMessage":"ليس لديك اي طلبات جارية قم بعمل طلب جديد من منتجاتنا الرائعة .",
+    "NoAllOrderTitle":"ليس لديك اي طلبات سابقة .",
+    "NoAllOrderMessage":"ليس لديك اي طلبات سابقة جرب واطلب الآن من منتجاتنا الرائعة .",
+    "homePageButton":"العودة إلى الصفحة الرئيسية"
   }
 }

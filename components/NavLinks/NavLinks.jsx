@@ -39,6 +39,7 @@ const NavLinks = ({ lang, t }) => {
             ))}
           </div>
           <div className="flex items-center max-[916px]:flex-1 justify-between">
+            <Link href={'/orders'} className="text-decoration-none link-light fs-5 fw-semibold">{t.orders.myOrders}</Link>
             <IconButton className="hidden min-[916px]:inline-block">
               <FavoriteBorder sx={{ fontSize: "32px", color: "#fff" }} />
             </IconButton>

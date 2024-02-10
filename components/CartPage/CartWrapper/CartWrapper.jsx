@@ -99,6 +99,7 @@ const router = useRouter()
     const data = await acceptCartOffer(localStorage.getItem('offers'));
     if(data === true){
       // changeStep(4);
+      localStorage.removeItem('offers');
       router.push(`/${lang}/shipping`);
     }
   }

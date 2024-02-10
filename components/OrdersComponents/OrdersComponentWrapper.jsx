@@ -1,11 +1,11 @@
 "use client"
 import Container from "../Container/Container";
 import './style.css';
-import OrdersNavigation from "./ordersNavigation";
 import ActiveOrders from "./ActiveOrders";
 import { useEffect, useState } from "react";
 import AllOrders from "./AllOrders";
 import $ from'jquery';
+import OrdersNavigation from "./OrdersNavigation.jsx";
 export default function OrdersComponentWrapper({t, lang}) {
     const [Content, setContent] = useState(<ActiveOrders t={t} lang={lang}/>);
 

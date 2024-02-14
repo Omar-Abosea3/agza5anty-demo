@@ -4,7 +4,7 @@ const nextConfig = {
         apiBaseUrl:'https://api.tbtexperts.com'
     },
     images: {
-        domains: ['admin.tbtexperts.com' , 'ph2.tbtexperts.com' , 'ph1.tbtexperts.com', 'api.tbtexperts.com'], // Add the hostname or domain here
+        domains: ['admin.tbtexperts.com' , 'ph2.tbtexperts.com' , 'ph1.tbtexperts.com', 'api.tbtexperts.com' , '44.231.55.155:8069'], // Add the hostname or domain here
     },
     // images: {
     //     remotePatterns: [

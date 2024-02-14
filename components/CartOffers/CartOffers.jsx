@@ -9,17 +9,18 @@ import MainButton from '../Button/MainButton';
 import $ from 'jquery';
 import { useEffect, useMemo, useState } from 'react';
 import { getCartOffers } from '@/app/apis';
-import { useRouter } from 'next/navigation';
-export default function CartOffers({lang , t , salesCard}) {
-    const [cartOffers , setCartOffers] = useState(null)
+import { usePathname, useRouter } from 'next/navigation';
+export default function CartOffers({lang , t , salesCard }) {
+    const [cartOffers , setCartOffers] = useState(null);
+    const pathname = usePathname();
     const router = useRouter();
     const  cartOffersToggeler = () => {
         if($('#cartOffersToggelarIcon').hasClass('bi-chevron-left')){
             $('.cartFiles').animate({right:'0%'} , 2000);
-            $('#cartOffersToggelarIcon').removeClass('bi-chevron-left').addClass('bi-chevron-right')
+            $('#cartOffersToggelarIcon').removeClass('bi-chevron-left').addClass('bi-chevron-right');
         }else{
             $('.cartFiles').animate({right:'-35%'} , 2000);
-            $('#cartOffersToggelarIcon').removeClass('bi-chevron-right').addClass('bi-chevron-left')
+            $('#cartOffersToggelarIcon').removeClass('bi-chevron-right').addClass('bi-chevron-left');
         }
     }
 
@@ -28,10 +29,14 @@ export default function CartOffers({lang , t , salesCard}) {
     } 
 
     const setOffer = (offer) => {
-        localStorage.setItem('offers' , offer.id)
+        localStorage.setItem('offers' , offer.id);
         $('.cartFiles').animate({right:'-35%'} , 2000);
         $('#cartOffersToggelarIcon').removeClass('bi-chevron-right').addClass('bi-chevron-left');
-        router.push(`/${lang}/checkout/payment`);
+        if(pathname.includes('payment')){
+            window.location.reload();
+        }else{
+            router.push(`/${lang}/checkout/payment`);
+        }
     }
     useEffect(()=>{    
         myCartOffers()
@@ -39,6 +44,7 @@ export default function CartOffers({lang , t , salesCard}) {
             // dispatch(getCartOffersData());
             
             myCartOffers();
+            console.log(cartOffers);
           }, 2000);
           return () => clearInterval(interval);
     },[]);
@@ -48,9 +54,9 @@ export default function CartOffers({lang , t , salesCard}) {
             <i style={{cursor:'pointer'}} onClick={cartOffersToggeler} className="bi bi-x-circle"></i>
         </div>
 
-        <div className='cartOffersToggleIcon shadow-lg rounded-3'>
+        {!cartOffers?'':<div className='cartOffersToggleIcon shadow-lg rounded-3'>
             <i onClick={cartOffersToggeler} id='cartOffersToggelarIcon' className="bi bi-chevron-left"></i>
-        </div>
+        </div>}
 
         <div className='cartOffersContent w-100 px-5'>
             {cartOffers?<>
@@ -65,10 +71,10 @@ export default function CartOffers({lang , t , salesCard}) {
                         <div className='d-flex align-items-center mb-3'>
                             <Rating
                                 readOnly
-                                defaultValue={4}
+                                defaultValue={offer.rating.avg}
                                 className={`${salesCard ? "order-[1] mb-[11px]" : "order-[0] w-50 ratings"}`}
                             />
-                            <p className='w-50 ps-1'>(5 review)</p>
+                            <p className='w-50 ps-1'>({offer.rating.total} review)</p>
                                 
                         </div>
                         <div className='d-flex align-items-center mb-3'>

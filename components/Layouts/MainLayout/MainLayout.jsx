@@ -21,7 +21,7 @@ const MainLayout = ({ children, lang, t}) => {
     <>
       {!pathname.includes("auth") && (
         <>
-          <CartOffers lang={lang} t={t} salesCard={null}/>
+          <CartOffers lang={lang} t={t} pathname={pathname} salesCard={null}/>
           <Navbar lang={lang} t={t} />
           <NavLinks lang={lang} t={t} />
         </>

@@ -170,8 +170,12 @@ const router = useRouter()
   const  cartOffersOpen = () => {
     if($('#cartOffersToggelarIcon').hasClass('bi-chevron-left') && !localStorage.getItem('offerId')){
         $('.cartFiles').animate({right:'0%'} , 2000);
-        $('#cartOffersToggelarIcon').removeClass('bi-chevron-left').addClass('bi-chevron-right')
+        $('#cartOffersToggelarIcon').removeClass('bi-chevron-left').addClass('bi-chevron-right');
     }
+    setTimeout(() => {
+        $('.cartFiles').animate({right:'-35%'} , 2000);
+        $('#cartOffersToggelarIcon').removeClass('bi-chevron-right').addClass('bi-chevron-left');
+    }, 2000);
   }
   const memo = useMemo(()=>{
     if(userData){
@@ -521,7 +525,7 @@ const router = useRouter()
 
       <div className="grid grid-cols-3 gap-[28px]">
         <div className="col-span-3 lg:col-span-2">
-            <CartItems removeAction={pageType !== "cart" && pageType !== "billing-info"} products={CartItemsData} offersId={offerId}/>
+            <CartItems removeAction={pageType !== "cart" && pageType !== "billing-info"} products={CartItemsData} step={step} offersId={offerId}/>
           {pageType === "billing-info" && (
             <div className="bg-[#F8F8F8] rounded-[10px] mt-[23px] p-[20px] grid grid-cols-1 min-[750px]:grid-cols-2 gap-[20px] min-[750px]:gap-0 ">
               <div className="text-black">
@@ -577,9 +581,9 @@ const router = useRouter()
             !cartItems?'':cartTotalComponent()
           ) : (
             <div className="px-[20px] component-wrapper">
-                {step === 4 || !cartItems? '' : stepperComponent()}
+                {step === 4 || !cartItems?.length? '' : stepperComponent()}
                 {step === 4 && track_OrderComponent()}
-              {(!cartItems || !cartItems.length ) && offerId? <>
+              {(!cartItems?.length ) || offerId? <>
                 {step === 2 && chooseOfferStepComponent()}
                 {step === 3 && paymentStepComponent()}
               </>:<>

@@ -497,7 +497,6 @@ export const getCartOffers = async() =>{
                 params:{}
             }
         });
-
         return data.result.data;
     } catch (error) {
         console.log(error);

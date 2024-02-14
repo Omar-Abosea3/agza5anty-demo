@@ -87,7 +87,7 @@ const CartDropDown = ({showCart,setShowCart}) => {
           fontWeight="700" 
           upperCase  
           href="/checkout/payment"
-          clickHandler={()=> setShowCart(false)}
+          clickHandler={()=> {localStorage.removeItem('offers'); setShowCart(false)}}
         />
       </div>}
     </div>

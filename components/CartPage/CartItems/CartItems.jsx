@@ -7,7 +7,7 @@ import defaultImage from '../../../assets/images/cart/product01.svg'
 import axios from 'axios';
 import Cookies from 'js-cookie';
 import { getUserCartData } from '@/app/GlobalRedaux/Features/User/userCartSlice';
-const CartItems = ({products= CartItemsData, removeAction , offersId}) => {
+const CartItems = ({products= CartItemsData, removeAction , offersId , step}) => {
   const cartItems = useSelector((state) => state.cart.cartItems);
   const totalCartPrice = useSelector((state) => state.cart.totalCartPrice);
   const currency_id = useSelector((state) => state.cart.currency_id);
@@ -54,7 +54,7 @@ const CartItems = ({products= CartItemsData, removeAction , offersId}) => {
   return (
     <div className='space-y-[23px]'>
       {
-        cartItems?cartItems.map((item)=>(
+        cartItems?.length && step === 1 ?cartItems.map((item)=>(
           <CartItem
             key={item.product?item.product[0]:item.id}
             id={item.product?item.product[0]:item.id}
@@ -63,7 +63,7 @@ const CartItems = ({products= CartItemsData, removeAction , offersId}) => {
             quantity={item.quantity}
             price={item.list_price?item.list_price:item.price}
             totalPrice={item.list_price?item.list_price * item.quantity:item.price * item.quantity}
-            removeAction={removeAction}
+            // removeAction={removeAction}
             currency_id={currency_id}
           />
         )):offersId && CartOfferData?CartOfferData.lines.map(item => 
@@ -71,10 +71,13 @@ const CartItems = ({products= CartItemsData, removeAction , offersId}) => {
             key={item.product_id}
             id={item.product_id}
             imgSrc={item.image.url || defaultImage.src}
-            quantity={item.quantity}
-            price={item.price}
-            totalPrice={item.price * item.quantity}
-            removeAction={removeAction}
+            quantity={item.offer_quantity}
+            price={item.offer_price}
+            totalPrice={item.offer_price * item.offer_quantity}
+            oldPrice={ item.ordered_price}
+            oldTotalPrice={item.ordered_price === item.offer_price && item.ordered_quantity === item.offer_quantity?item.offer_price * item.offer_quantity:item.ordered_price * item.ordered_quantity}
+            oldQuantity={item.ordered_quantity === item.offer_quantity?'':item.ordered_quantity}
+            // removeAction={removeAction}
             currency_id={CartOfferData.currency_id[1]}
           />):<div className='p-5 d-flex justify-content-center align-items-center'>
           <h2 className='my-5'>your cart is empty please check your checkout offers or add a new cart</h2>
